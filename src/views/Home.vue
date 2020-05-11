@@ -1,18 +1,22 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Topbar class="qingqing"></Topbar>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Topbar from '@/components/topbar.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Topbar
   }
 }
 </script>
+<style scoped>
+.qingqing >>> .h4{
+  font-size: 2rem;
+}
+</style>
